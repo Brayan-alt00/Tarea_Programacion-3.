@@ -1,0 +1,90 @@
+Inicio
+
+Entrada: número decimal
+
+Bucle mientras decimal > 0:
+
+Obtener residuo de división entre 2
+
+Concatenar al inicio de una cadena
+
+Dividir decimal entre 2
+
+Salida: número binario
+
+// Item 2
+
+Inicio
+
+Entrada: radio del círculo
+
+Proceso: calcular área con la fórmula
+área = π * radio^2
+
+Salida: mostrar el área
+
+Fin
+
+// Item 3
+
+Inicio
+
+Entrada: base
+
+Entrada: altura
+
+Proceso: área = (base * altura) / 2
+
+Salida: mostrar el área
+
+Fin
+
+// Item 4
+
+Inicio
+
+Entrada: número
+
+Si el número es menor o igual a 1 → "No es primo"
+
+Sino, verificar si es divisible por algún número desde 2 hasta (n-1)
+
+Si encuentra un divisor → no es primo
+
+Si no encuentra divisores → es primo
+
+Fin
+
+// Item 5
+
+Inicio
+
+Entrada: segundos
+
+Calcular:
+
+Horas = segundos / 3600
+
+Minutos = (segundos % 3600) / 60
+
+Segundos restantes = segundos % 60
+
+Mostrar resultados
+
+Fin
+
+// item 6
+
+Inicio
+
+Inicializar matriz 3x2 con frutas ordenadas alfabéticamente
+
+Solicitar fruta a buscar
+
+Recorrer la matriz para comparar
+
+Si se encuentra, mostrar fila y columna
+
+Mostrar la matriz completa
+
+Fin

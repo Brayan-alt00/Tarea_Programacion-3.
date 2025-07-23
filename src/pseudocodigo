@@ -1,0 +1,98 @@
+Inicio
+   Escribir "Ingrese un número decimal:"
+   Leer decimal
+   binario ← ""
+
+   Mientras decimal > 0 hacer
+      residuo ← decimal MOD 2
+      binario ← residuo + binario
+      decimal ← decimal DIV 2
+   Fin Mientras
+
+   Escribir "El número en binario es: ", binario
+Fin
+
+// Item 2
+
+Inicio
+   Escribir "Ingrese el radio del círculo:"
+   Leer radio
+   area ← PI * radio * radio
+   Escribir "El área del círculo es: ", area
+Fin
+
+// Item 3
+
+Inicio
+   Escribir "Ingrese la base del triángulo:"
+   Leer base
+   Escribir "Ingrese la altura del triángulo:"
+   Leer altura
+   area ← (base * altura) / 2
+   Escribir "El área del triángulo es: ", area
+Fin
+
+// Item 4
+
+Inicio
+   Escribir "Ingrese un número:"
+   Leer numero
+   Si numero <= 1 Entonces
+      Escribir "No es un número primo"
+   Sino
+      primo ← Verdadero
+      Para i desde 2 hasta numero - 1 hacer
+         Si numero MOD i = 0 Entonces
+            primo ← Falso
+         Fin Si
+      Fin Para
+
+      Si primo = Verdadero Entonces
+         Escribir "El número es primo"
+      Sino
+         Escribir "El número no es primo"
+      Fin Si
+   Fin Si
+Fin
+
+// item 5
+
+Inicio
+   Escribir "Ingrese la cantidad de segundos:"
+   Leer segundos
+   horas ← segundos DIV 3600
+   minutos ← (segundos MOD 3600) DIV 60
+   sobrantes ← segundos MOD 60
+   Escribir "Horas: ", horas
+   Escribir "Minutos: ", minutos
+   Escribir "Segundos restantes: ", sobrantes
+Fin
+
+// item 6
+
+Inicio
+   Declarar matriz[3][2] con frutas ordenadas alfabéticamente
+   Escribir "Ingrese el nombre de la fruta a buscar:"
+   Leer frutaBuscar
+   encontrado ← Falso
+
+   Para i desde 0 hasta 2 hacer
+      Para j desde 0 hasta 1 hacer
+         Si matriz[i][j] = frutaBuscar Entonces
+            Escribir "Fruta encontrada en fila ", i, " columna ", j
+            encontrado ← Verdadero
+         Fin Si
+      Fin Para
+   Fin Para
+
+   Si encontrado = Falso Entonces
+      Escribir "Fruta no encontrada"
+   Fin Si
+
+   Escribir "Contenido completo de la matriz:"
+   Para i desde 0 hasta 2 hacer
+      Para j desde 0 hasta 1 hacer
+         Escribir matriz[i][j]
+      Fin Para
+   Fin Para
+Fin
